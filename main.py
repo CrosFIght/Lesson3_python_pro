@@ -56,5 +56,9 @@ async def quiz(ctx):
 
     await ctx.send("**Twój wynik to:** " + str(score) + "/" + str(len(questions)))
 
+@bot.command('say_my_name')
+async def say_my_name(ctx):
+    await ctx.send("Heisenberg!")
+
 
 bot.run(settings)
